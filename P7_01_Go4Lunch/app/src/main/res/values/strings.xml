@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Go4Lunch</string>
+    <string name="catch_phrase">Find a nice restaurant and invite your co-workers for lunch!</string>
+
+    <string name="sign_in_facebook">Sign in with FaceBook</string>
+    <string name="sign_in_google">Sign in with Google</string>
+    <string name="description_background">Background image</string>
+    <string name="description_logo_go4lunch">logo Go4Lunch</string>
+
+    <string name="facebook_app_id">365495391717273</string>
+    <string name="fb_login_protocol_scheme">fb365495391717273</string>
+    <string name="navigation_drawer_open">drawer open</string>
+    <string name="navigation_drawer_close">drawer close</string>
+</resources>

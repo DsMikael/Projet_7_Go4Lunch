@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="orange_light">#FF8A50</color>
+    <color name="orange_medium">#FF5721</color>
+    <color name="orange_dark">#C41A00</color>
+
+    <color name="yellow">#F5E421</color>
+    <color name="black">#000000</color>
+    <color name="grey">#D2D2D2</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="green">#68F1AE</color>
+    <color name="red">#D11C1C</color>
+
+    <color name="btn_facebook">#507CC0</color>
+    <color name="btn_google">#E0492F</color>
+</resources>
