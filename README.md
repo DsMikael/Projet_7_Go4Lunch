@@ -8,19 +8,19 @@
 * Test unitaire : null.
 * Tests instrumentalisés : null.
 * État des tests : null.
-* Vesrions supproter : Android 4.4 et supérieures
+* Versions supporter : Android 4.4 et supérieures
 * Code de l'application : [Go4Lunch](https://github.com/DsMikael/Projet_7_Go4Lunch) !
 
 ### À faire 
-![](https://progress-bar.dev/5/?scale=100&width=200)
+![](https://progress-bar.dev/20/?scale=100&width=200)
 
 * [ ] Code de l'application.
      - [x] Création de la structure.
      - [x] Elements graphique.
      - [ ] Création des vues.
-          - [ ] Connexion
-          - [ ] Menu
-          - [ ] Écran d'accueil
+          - [X] Connexion
+          - [X] Menu
+          - [X] Écran d'accueil
           - [ ] Vue des restaurants
           - [ ] Fiche détaillée d'un restaurant
           - [ ] Liste des collègues
