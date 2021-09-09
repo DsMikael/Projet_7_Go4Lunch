@@ -98,21 +98,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_fb" />
 
-    <Button
-        android:id="@+id/logout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@color/red"
-        android:paddingStart="25dp"
-        android:paddingEnd="25dp"
-        android:text="logout"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_google"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="@dimen/marginStartEnd"
-        android:layout_marginStart="@dimen/marginStartEnd" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

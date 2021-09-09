@@ -5,9 +5,14 @@
       <map>
         <entry key="..\:/Users/micka/Desktop/P7_DASILVA_MICKAEL/P7_01_Go4Lunch/app/src/main/res/drawable/facebook.xml" value="0.18888888888888888" />
         <entry key="..\:/Users/micka/Desktop/P7_DASILVA_MICKAEL/P7_01_Go4Lunch/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/micka/Desktop/P7_DASILVA_MICKAEL/P7_01_Go4Lunch/app/src/main/res/layout/hungry_fragment.xml" value="0.33" />
+        <entry key="..\:/Users/micka/Desktop/P7_DASILVA_MICKAEL/P7_01_Go4Lunch/app/src/main/res/layout/hungry_list_fragment.xml" value="0.33" />
         <entry key="..\:/Users/micka/Desktop/P7_DASILVA_MICKAEL/P7_01_Go4Lunch/app/src/main/res/layout/maps_fragment.xml" value="0.14583333333333334" />
+        <entry key="..\:/Users/micka/Desktop/P7_DASILVA_MICKAEL/P7_01_Go4Lunch/app/src/main/res/layout/mates_fragment.xml" value="0.33" />
         <entry key="..\:/Users/micka/Desktop/P7_DASILVA_MICKAEL/P7_01_Go4Lunch/app/src/main/res/layout/mates_list_fragment.xml" value="0.1" />
         <entry key="..\:/Users/micka/Desktop/P7_DASILVA_MICKAEL/P7_01_Go4Lunch/app/src/main/res/layout/nav_header_main.xml" value="0.1" />
+        <entry key="..\:/Users/micka/Desktop/P7_DASILVA_MICKAEL/P7_01_Go4Lunch/app/src/main/res/layout/test_fragment.xml" value="0.13768115942028986" />
+        <entry key="..\:/Users/micka/Desktop/P7_DASILVA_MICKAEL/P7_01_Go4Lunch/app/src/main/res/menu/activity_main_drawer.xml" value="0.23809523809523808" />
         <entry key="..\:/Users/micka/Desktop/P7_DASILVA_MICKAEL/P7_01_Go4Lunch/app/src/main/res/menu/top_nav_menu.xml" value="0.14629629629629629" />
       </map>
     </option>

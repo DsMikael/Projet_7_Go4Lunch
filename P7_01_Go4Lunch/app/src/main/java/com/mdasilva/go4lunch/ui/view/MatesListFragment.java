@@ -8,8 +8,10 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 
 import com.mdasilva.go4lunch.databinding.MatesListFragmentBinding;
+import com.mdasilva.go4lunch.ui.viewModel.MatesListFragmentViewModel;
 
 public class MatesListFragment extends Fragment {
 
@@ -20,7 +22,7 @@ public class MatesListFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
 
         binding = MatesListFragmentBinding.inflate(inflater, container, false);
-
+        MatesListFragmentViewModel viewModel = new ViewModelProvider(requireActivity()).get(MatesListFragmentViewModel.class);
         return binding.getRoot();
     }
 

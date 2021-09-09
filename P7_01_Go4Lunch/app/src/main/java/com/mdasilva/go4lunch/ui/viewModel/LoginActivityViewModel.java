@@ -31,11 +31,8 @@ public class LoginActivityViewModel extends AndroidViewModel {
     }
 
     public void signInFacebook(LoginActivity loginActivity) {
-        Timber.d("Facebook signIn");
         LoginManager.getInstance().logInWithReadPermissions(loginActivity,
                 Arrays.asList("email", "public_profile"));
-
-
     }
 
     public void signInGoogle(Intent data) {
@@ -43,7 +40,6 @@ public class LoginActivityViewModel extends AndroidViewModel {
         try {
             // Google Sign In was successful, authenticate with Firebase
             GoogleSignInAccount account = task.getResult(ApiException.class);
-            Timber.d( "firebaseAuthWithGoogle: %s", account.getId());
             firebaseAuthWithGoogle(account.getIdToken());
 
         } catch (ApiException e) {
@@ -56,16 +52,12 @@ public class LoginActivityViewModel extends AndroidViewModel {
         mAuthRepo.firebaseAuthWithGoogle(idToken);
     }
 
-
     public MutableLiveData<FirebaseUser> getUserMutableLiveData() {
         return mAuthRepo.getUserMutableLiveData();
-    }
-
-    public void signOut() {
-        mAuthRepo.signOut();
     }
 
     public void handleFacebookAccessToken(AccessToken accessToken) {
         mAuthRepo.handleFacebookAccessToken(accessToken);
     }
+
 }

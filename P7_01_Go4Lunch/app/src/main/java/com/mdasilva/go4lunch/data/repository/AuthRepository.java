@@ -15,15 +15,13 @@ public class AuthRepository{
 
     private final FirebaseAuth mAuth;
     private final MutableLiveData<FirebaseUser> userMutableLiveData;
-    private FirebaseUser currentUser;
 
     public AuthRepository() {
         mAuth = FirebaseAuth.getInstance();
         userMutableLiveData = new MutableLiveData<>();
 
-        currentUser = mAuth.getCurrentUser();
+        FirebaseUser currentUser = mAuth.getCurrentUser();
         userMutableLiveData.postValue(currentUser);
-
     }
 
     public MutableLiveData<FirebaseUser> getUserMutableLiveData() {
@@ -37,14 +35,11 @@ public class AuthRepository{
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
                         // Sign in success, update UI with the signed-in user's information
-                        Timber.d("signInWithCredential:success");
                         FirebaseUser user = mAuth.getCurrentUser();
                         userMutableLiveData.postValue(user);
-                        Timber.d("User %s", user);
                     } else {
                         // If sign in fails, display a message to the user.
                         Timber.w(task.getException(), "signInWithCredential:failure");
-                        Timber.d("User %s", (Object) null);
                     }
                 });
     }
@@ -55,15 +50,11 @@ public class AuthRepository{
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
                         // Sign in success, update UI with the signed-in user's information
-                        Timber.d( "signInWithCredential:success");
                         FirebaseUser user = mAuth.getCurrentUser();
                         userMutableLiveData.postValue(user);
-                        Timber.d("User %s", user);
                     } else {
                         // If sign in fails, display a message to the user.
                         Timber.w(task.getException(), "signInWithCredential:failure");
-//                            updateUI(null);
-                        Timber.d("User %s", (Object) null);
                     }
                 });
     }
@@ -71,8 +62,9 @@ public class AuthRepository{
     public void signOut() {
         mAuth.signOut();
         userMutableLiveData.postValue(mAuth.getCurrentUser());
-        Timber.d("User %s", mAuth.getCurrentUser());
     }
+
+
 }
 
 

@@ -17,4 +17,7 @@
     <style name="Theme.Go4Lunch.Drawer" parent="Theme.Go4Lunch">
         <item name="textAllCaps">true</item>
     </style>
+    <style name="AlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColorPrimary">@color/black</item>
+    </style>
 </resources>

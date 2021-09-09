@@ -11,4 +11,7 @@
     <string name="fb_login_protocol_scheme">fb365495391717273</string>
     <string name="navigation_drawer_open">drawer open</string>
     <string name="navigation_drawer_close">drawer close</string>
+    <string name="alertDialogPermisssion">Go4Lunch à besoin de votre position pour fonctionner!</string>
+    <string name="alertDialogPermisssionDeny">Deny</string>
+    <string name="alertDialogPermisssionOk">Ok</string>
 </resources>
