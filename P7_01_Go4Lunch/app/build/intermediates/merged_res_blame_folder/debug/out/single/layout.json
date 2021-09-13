@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\hungry_fragment.xml",
+        "source": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\src\\main\\res\\layout\\hungry_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\maps_fragment.xml",
+        "source": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\src\\main\\res\\layout\\maps_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_home.xml",
+        "source": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\src\\main\\res\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\nav_header_main.xml",
+        "source": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\src\\main\\res\\layout\\nav_header_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\mates_fragment.xml",
+        "source": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\src\\main\\res\\layout\\mates_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\hungry_list_fragment.xml",
+        "source": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\src\\main\\res\\layout\\hungry_list_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login.xml",
+        "source": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\mates_list_fragment.xml",
+        "source": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\src\\main\\res\\layout\\mates_list_fragment.xml"
+    }
+]

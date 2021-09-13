@@ -1,7 +1,5 @@
 package com.mdasilva.go4lunch.data.service;
 
-import android.location.Location;
-
 import com.google.android.gms.maps.model.LatLng;
 import com.mdasilva.go4lunch.data.model.RestaurantDetails;
 
@@ -15,7 +13,7 @@ public interface GooglePlaceApiService {
 
     @GET("maps/api/place/nearbysearch/json")
     Call<List<RestaurantDetails>> getRestaurants(@Query("location") LatLng location,
-                                                 @Query("radius")int radius,
-                                                 @Query("type")String type,
-                                                 @Query("key")String key);
+                                                 @Query("radius") int radius,
+                                                 @Query("type") String type,
+                                                 @Query("key") String key);
 }

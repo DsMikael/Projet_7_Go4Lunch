@@ -39,7 +39,7 @@ import timber.log.Timber;
 @RuntimePermissions
 public class HomeActivity extends AppCompatActivity{
 
-    private  ActivityHomeBinding binding;
+    private ActivityHomeBinding binding;
     private LocationManager locationManager;
     private HomeActivityViewModel viewModel;
 
@@ -117,8 +117,8 @@ public class HomeActivity extends AppCompatActivity{
 
                 Timber.d(String.valueOf(profile.getPhotoUrl()));
             }
-        });
 
+        });
         HomeActivityPermissionsDispatcher.askPermissionsWithPermissionCheck(this);
     }
 

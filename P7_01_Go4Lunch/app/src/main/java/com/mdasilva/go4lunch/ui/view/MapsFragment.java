@@ -1,6 +1,7 @@
 package com.mdasilva.go4lunch.ui.view;
 
 import android.annotation.SuppressLint;
+import android.location.Location;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,14 +18,18 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.mdasilva.go4lunch.R;
+import com.mdasilva.go4lunch.data.repository.GooglePlaceRepository;
 import com.mdasilva.go4lunch.databinding.MapsFragmentBinding;
 import com.mdasilva.go4lunch.ui.viewModel.HomeActivityViewModel;
+
+import timber.log.Timber;
 
 public class MapsFragment extends Fragment
         implements OnMapReadyCallback{
 
     private MapsFragmentBinding binding;
     private HomeActivityViewModel viewModel;
+    public GooglePlaceRepository mGoogleRepos;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
@@ -68,6 +73,13 @@ public class MapsFragment extends Fragment
             googleMap.setMinZoomPreference(16.0f);
             googleMap.animateCamera(CameraUpdateFactory.newLatLng(
                     new LatLng(location.getLatitude(),location.getLongitude())));
+            LatLng mlocation = new LatLng(location.getLatitude(),location.getLongitude());
+            Timber.d(mlocation.toString());
+            mGoogleRepos.getRestaurants(
+                    mlocation,
+                    1500,
+                    "restaurant",
+                    "AIzaSyDvX-bwM5ZRMI8nRUx58ZDvqVQLzl7z9os");
         });
     }
 

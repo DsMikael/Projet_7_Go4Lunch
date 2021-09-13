@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">947526646363-ujb05movmakqen42abrmnvenjmt7e4oi.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">947526646363</string>
+    <string name="google_api_key" translatable="false">AIzaSyAnOeUGVHL-SpzvoGFfNGyZCTCM_BUngCw</string>
+    <string name="google_app_id" translatable="false">1:947526646363:android:77108d403bb9f2fb9ddd7e</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAnOeUGVHL-SpzvoGFfNGyZCTCM_BUngCw</string>
+    <string name="google_storage_bucket" translatable="false">go4lunch-op.appspot.com</string>
+    <string name="project_id" translatable="false">go4lunch-op</string>
+</resources>
