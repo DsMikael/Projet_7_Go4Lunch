@@ -1,7 +1,5 @@
 package com.mdasilva.go4lunch.data.model;
 
-import android.net.Uri;
-
 import com.google.android.gms.maps.model.LatLng;
 import com.squareup.moshi.Json;
 

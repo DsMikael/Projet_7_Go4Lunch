@@ -8,20 +8,14 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.MutableLiveData;
 
-import com.google.android.gms.common.api.ApiException;
-import com.google.android.gms.tasks.Task;
+import com.google.android.gms.maps.model.LatLng;
 import com.google.android.libraries.places.api.Places;
-import com.google.android.libraries.places.api.model.Place;
-import com.google.android.libraries.places.api.model.PlaceLikelihood;
-import com.google.android.libraries.places.api.net.FetchPlaceRequest;
-import com.google.android.libraries.places.api.net.FindCurrentPlaceRequest;
-import com.google.android.libraries.places.api.net.FindCurrentPlaceResponse;
 import com.google.android.libraries.places.api.net.PlacesClient;
 import com.google.firebase.auth.FirebaseUser;
+import com.mdasilva.go4lunch.data.model.RestaurantDetails;
 import com.mdasilva.go4lunch.data.repository.AuthRepository;
+import com.mdasilva.go4lunch.data.repository.GooglePlaceRepository;
 
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 import timber.log.Timber;
@@ -30,18 +24,20 @@ public class HomeActivityViewModel extends AndroidViewModel {
 
     private final AuthRepository mAuthRepo;
     public final MutableLiveData<Location> mlocation = new MutableLiveData<>();
-    private PlacesClient placesClient;
+    public GooglePlaceRepository mGoogleRepos;
 
     public HomeActivityViewModel(@NonNull Application application) {
         super(application);
         mAuthRepo = new AuthRepository();
-        placesClient = Places.createClient(application.getApplicationContext());
+        PlacesClient placesClient = Places.createClient(application.getApplicationContext());
 //       placeFields = Arrays.asList(
 //                Place.Field.NAME, Place.Field.ADDRESS, Place.Field.LAT_LNG,
 //                Place.Field.OPENING_HOURS, Place.Field.PHONE_NUMBER, Place.Field.WEBSITE_URI,
 //                Place.Field.TYPES, Place.Field.PHOTO_METADATAS);
 //
 //        request = FindCurrentPlaceRequest.newInstance(placeFields);
+
+
     }
 
 
@@ -57,20 +53,30 @@ public class HomeActivityViewModel extends AndroidViewModel {
     public void location(Location lastKnownLocation) {
         mlocation.postValue(lastKnownLocation);
         Timber.d("Location %s" , lastKnownLocation);
-//        getRestaurantDetails();
+        getRestaurantDetails(lastKnownLocation);
     }
 
     @SuppressLint("MissingPermission")
-    public void getRestaurantDetails(){
+    public void getRestaurantDetails(Location location){
 
-        List<Place.Field> placeFields = Arrays.asList(Place.Field.ID,
-                Place.Field.NAME, Place.Field.ADDRESS, Place.Field.LAT_LNG,
-//                Place.Field.OPENING_HOURS, Place.Field.PHONE_NUMBER, Place.Field.WEBSITE_URI,
-                Place.Field.TYPES, Place.Field.PHOTO_METADATAS);
+        LatLng mlocation = new LatLng(location.getLatitude(),location.getLongitude());
+        Timber.d(mlocation.toString());
+        List<RestaurantDetails> listRestaurant = mGoogleRepos.getRestaurants(
+                mlocation,
+                1500,
+                "restaurant",
+                "AIzaSyDvX-bwM5ZRMI8nRUx58ZDvqVQLzl7z9os");
 
-
-        FindCurrentPlaceRequest request =
-                FindCurrentPlaceRequest.builder(placeFields).build();
+        Timber.d(String.valueOf(listRestaurant));
+//
+//        List<Place.Field> placeFields = Arrays.asList(Place.Field.ID,
+//                Place.Field.NAME, Place.Field.ADDRESS, Place.Field.LAT_LNG,
+////                Place.Field.OPENING_HOURS, Place.Field.PHONE_NUMBER, Place.Field.WEBSITE_URI,
+//                Place.Field.TYPES, Place.Field.PHOTO_METADATAS);
+//
+//
+//        FindCurrentPlaceRequest request =
+//                FindCurrentPlaceRequest.builder(placeFields).build();
 
 //
 //        placesClient.fetchPlace(request).addOnSuccessListener(((response) -> {

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.LoginActivity">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/login_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/description_background" />
+
+        <ImageView
+            android:id="@+id/background_login"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:contentDescription="@string/description_logo_go4lunch"
+            android:src="@drawable/logo_go4lunch"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="80dp"/>
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="68sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/background_login"
+            android:shadowColor="@color/black"
+            android:shadowRadius="1"
+            android:shadowDx="1"
+            android:shadowDy="1"/>
+
+        <TextView
+            android:id="@+id/catch_phrase"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/catch_phrase"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:translationY="-12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/app_name"
+            android:shadowColor="@color/black"
+            android:shadowRadius="1"
+            android:shadowDx="1"
+            android:shadowDy="1" />
+
+    <Button
+        android:id="@+id/btn_fb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStartEnd"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="@dimen/marginStartEnd"
+        android:background="@drawable/facebook_btn_background"
+        android:drawableStart="@drawable/facebook"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="@string/sign_in_facebook"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/catch_phrase" />
+
+    <Button
+        android:id="@+id/btn_google"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStartEnd"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="@dimen/marginStartEnd"
+        android:background="@drawable/google_btn_background"
+        android:drawableStart="@drawable/logo_google_plus"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:text="@string/sign_in_google"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_fb" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

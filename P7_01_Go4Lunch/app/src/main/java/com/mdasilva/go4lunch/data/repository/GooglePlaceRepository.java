@@ -1,7 +1,5 @@
 package com.mdasilva.go4lunch.data.repository;
 
-import android.location.Location;
-
 import androidx.annotation.NonNull;
 
 import com.google.android.gms.maps.model.LatLng;
@@ -19,7 +17,7 @@ import retrofit2.converter.moshi.MoshiConverterFactory;
 import timber.log.Timber;
 
 public class GooglePlaceRepository {
-    private GooglePlaceApiService mApiService;
+    private final GooglePlaceApiService mApiService;
     private List<RestaurantDetails> restaurantDetails;
 
     public GooglePlaceRepository(){
@@ -35,16 +33,18 @@ public class GooglePlaceRepository {
                                                   int radius,
                                                   String type,
                                                   String key) {
+        Timber.d(location+" "+ radius+" "+type+" "+key);
+
         mApiService.getRestaurants(location, radius, type, key).enqueue(new Callback<List<RestaurantDetails>>() {
             @Override
-            public void onResponse(Call<List<RestaurantDetails>> call, @NonNull Response<List<RestaurantDetails>> response) {
+            public void onResponse(@NonNull Call<List<RestaurantDetails>> call, @NonNull Response<List<RestaurantDetails>> response) {
                 Timber.d(call.toString());
                 Timber.d(response.toString());
                 restaurantDetails = response.body();
             }
 
             @Override
-            public void onFailure(@NonNull Call<List<RestaurantDetails>> call, Throwable t) {
+            public void onFailure(@NonNull Call<List<RestaurantDetails>> call, @NonNull Throwable t) {
                 Timber.w(t.getCause(), "Something went wrong!");
             }
         });
