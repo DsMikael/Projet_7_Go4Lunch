@@ -1,7 +1,7 @@
 com/mdasilva/go4lunch/databinding/MatesListFragmentBinding.java
  com.mdasilva.go4lunch.databinding.MatesListFragmentBinding
-com/mdasilva/go4lunch/data/model/User.java
- com.mdasilva.go4lunch.data.model.User
+com/mdasilva/go4lunch/ui/view/HomeActivity.java
+ com.mdasilva.go4lunch.ui.view.HomeActivity
 com/mdasilva/go4lunch/databinding/ActivityLoginBinding.java
  com.mdasilva.go4lunch.databinding.ActivityLoginBinding
 com/mdasilva/go4lunch/ui/viewModel/MatesListFragmentViewModel.java
@@ -29,22 +29,24 @@ com/mdasilva/go4lunch/databinding/MapsFragmentBinding.java
  com.mdasilva.go4lunch.databinding.MapsFragmentBinding
 com/mdasilva/go4lunch/databinding/MatesFragmentBinding.java
  com.mdasilva.go4lunch.databinding.MatesFragmentBinding
+com/mdasilva/go4lunch/data/model/RestaurantListWrapper.java
+ com.mdasilva.go4lunch.data.model.RestaurantListWrapper
 com/mdasilva/go4lunch/Go4LunchApp.java
  com.mdasilva.go4lunch.Go4LunchApp
 com/mdasilva/go4lunch/BuildConfig.java
  com.mdasilva.go4lunch.BuildConfig
 com/mdasilva/go4lunch/databinding/HungryListFragmentBinding.java
  com.mdasilva.go4lunch.databinding.HungryListFragmentBinding
+com/mdasilva/go4lunch/data/model/User.java
+ com.mdasilva.go4lunch.data.model.User
+com/mdasilva/go4lunch/ui/view/HungryListFragment.java
+ com.mdasilva.go4lunch.ui.view.HungryListFragment
+com/mdasilva/go4lunch/ui/view/MapsFragment.java
+ com.mdasilva.go4lunch.ui.view.MapsFragment
 com/mdasilva/go4lunch/data/service/GooglePlaceApiService.java
  com.mdasilva.go4lunch.data.service.GooglePlaceApiService
 com/mdasilva/go4lunch/data/repository/GooglePlaceRepository.java
  com.mdasilva.go4lunch.data.repository.GooglePlaceRepository
  com.mdasilva.go4lunch.data.repository.GooglePlaceRepository$1
-com/mdasilva/go4lunch/ui/view/HomeActivity.java
- com.mdasilva.go4lunch.ui.view.HomeActivity
 com/mdasilva/go4lunch/ui/viewModel/HomeActivityViewModel.java
  com.mdasilva.go4lunch.ui.viewModel.HomeActivityViewModel
-com/mdasilva/go4lunch/ui/view/MapsFragment.java
- com.mdasilva.go4lunch.ui.view.MapsFragment
-com/mdasilva/go4lunch/ui/view/HungryListFragment.java
- com.mdasilva.go4lunch.ui.view.HungryListFragment

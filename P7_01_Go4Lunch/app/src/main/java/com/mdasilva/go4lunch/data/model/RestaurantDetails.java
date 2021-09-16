@@ -28,6 +28,18 @@ public class RestaurantDetails {
         this.vicinity = vicinity;
     }
 
+    @Override
+    public String toString() {
+        return "RestaurantDetails{" +
+                "location=" + location +
+                ", name='" + name + '\'' +
+                ", openingHours=" + openingHours +
+                ", photoReference='" + photoReference + '\'' +
+                ", placeid='" + placeid + '\'' +
+                ", vicinity='" + vicinity + '\'' +
+                '}';
+    }
+
     public LatLng getLocation() {
         return location;
     }

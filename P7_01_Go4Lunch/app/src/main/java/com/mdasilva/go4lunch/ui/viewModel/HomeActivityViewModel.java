@@ -8,11 +8,11 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.MutableLiveData;
 
-import com.google.android.gms.maps.model.LatLng;
 import com.google.android.libraries.places.api.Places;
 import com.google.android.libraries.places.api.net.PlacesClient;
 import com.google.firebase.auth.FirebaseUser;
 import com.mdasilva.go4lunch.data.model.RestaurantDetails;
+import com.mdasilva.go4lunch.data.model.RestaurantListWrapper;
 import com.mdasilva.go4lunch.data.repository.AuthRepository;
 import com.mdasilva.go4lunch.data.repository.GooglePlaceRepository;
 
@@ -29,6 +29,7 @@ public class HomeActivityViewModel extends AndroidViewModel {
     public HomeActivityViewModel(@NonNull Application application) {
         super(application);
         mAuthRepo = new AuthRepository();
+        mGoogleRepos = new GooglePlaceRepository();
         PlacesClient placesClient = Places.createClient(application.getApplicationContext());
 //       placeFields = Arrays.asList(
 //                Place.Field.NAME, Place.Field.ADDRESS, Place.Field.LAT_LNG,
@@ -58,11 +59,8 @@ public class HomeActivityViewModel extends AndroidViewModel {
 
     @SuppressLint("MissingPermission")
     public void getRestaurantDetails(Location location){
-
-        LatLng mlocation = new LatLng(location.getLatitude(),location.getLongitude());
-        Timber.d(mlocation.toString());
         List<RestaurantDetails> listRestaurant = mGoogleRepos.getRestaurants(
-                mlocation,
+                location.getLatitude()+","+location.getLongitude(),
                 1500,
                 "restaurant",
                 "AIzaSyDvX-bwM5ZRMI8nRUx58ZDvqVQLzl7z9os");
