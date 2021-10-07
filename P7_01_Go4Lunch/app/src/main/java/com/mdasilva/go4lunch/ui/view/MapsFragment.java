@@ -16,9 +16,13 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 import com.mdasilva.go4lunch.R;
+import com.mdasilva.go4lunch.data.model.restaurantDetails.RestaurantDetails;
 import com.mdasilva.go4lunch.databinding.MapsFragmentBinding;
 import com.mdasilva.go4lunch.ui.viewModel.HomeActivityViewModel;
+
+import timber.log.Timber;
 
 public class MapsFragment extends Fragment
         implements OnMapReadyCallback{
@@ -51,7 +55,6 @@ public class MapsFragment extends Fragment
         binding = null;
     }
 
-
     @SuppressLint("MissingPermission")
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
@@ -62,14 +65,23 @@ public class MapsFragment extends Fragment
             e.printStackTrace();
         }
         googleMap.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
-//        mMap.addMarker(new MarkerOptions().position(map).title("Me"));
-//        mMap.setMaxZoomPreference(16.0f);
+
         viewModel.mlocation.observe(getViewLifecycleOwner(), location -> {
             googleMap.setMinZoomPreference(16.0f);
             googleMap.animateCamera(CameraUpdateFactory.newLatLng(
                     new LatLng(location.getLatitude(),location.getLongitude())));
 
         });
+
+        viewModel.restaurantDetailsList.observe(getViewLifecycleOwner(), restaurantDetails -> {
+            for (RestaurantDetails restaurant : restaurantDetails) {
+                Timber.d("Restaurant %s", restaurant);
+                LatLng latLng = new LatLng(Double.parseDouble(restaurant.getGeometry().getLocation().getLat()),
+                        Double.parseDouble(restaurant.getGeometry().getLocation().getLng()));
+                googleMap.addMarker(new MarkerOptions().position(latLng).title(restaurant.getName()));
+            }
+        });
+
     }
 
 

@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_add_hungry.png.flat",
+        "source": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\src\\main\\res\\drawable-hdpi\\ic_add_hungry.png"
+    },
+    {
         "merged": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_menu_logout.xml.flat",
         "source": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\src\\main\\res\\drawable\\ic_menu_logout.xml"
     },
@@ -80,6 +84,10 @@
         "source": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\src\\main\\res\\drawable-xxhdpi\\ic_mates_choice.png"
     },
     {
+        "merged": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_add_hungry.xml.flat",
+        "source": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\src\\main\\res\\drawable\\ic_add_hungry.xml"
+    },
+    {
         "merged": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_menu_settings.xml.flat",
         "source": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\src\\main\\res\\drawable\\ic_menu_settings.xml"
     },
@@ -120,6 +128,10 @@
         "source": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\src\\main\\res\\drawable\\logo_google_plus.xml"
     },
     {
+        "merged": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_add_hungry.png.flat",
+        "source": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\src\\main\\res\\drawable-mdpi\\ic_add_hungry.png"
+    },
+    {
         "merged": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\build\\intermediates\\merged_res\\debug\\layout_maps_fragment.xml.flat",
         "source": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\src\\main\\res\\layout\\maps_fragment.xml"
     },
@@ -128,12 +140,24 @@
         "source": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_foreground.png"
     },
     {
+        "merged": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_hungry_contact.xml.flat",
+        "source": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\src\\main\\res\\layout\\activity_hungry_contact.xml"
+    },
+    {
         "merged": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_add_hungry.png.flat",
+        "source": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\src\\main\\res\\drawable-xhdpi\\ic_add_hungry.png"
+    },
+    {
+        "merged": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_add_hungry.png.flat",
+        "source": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\src\\main\\res\\drawable-xxhdpi\\ic_add_hungry.png"
     },
     {
         "merged": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_mates_choice.png.flat",

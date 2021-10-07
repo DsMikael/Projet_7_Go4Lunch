@@ -14,6 +14,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseUser;
+import com.mdasilva.go4lunch.data.model.User;
 import com.mdasilva.go4lunch.data.repository.AuthRepository;
 import com.mdasilva.go4lunch.ui.view.LoginActivity;
 
@@ -58,6 +59,10 @@ public class LoginActivityViewModel extends AndroidViewModel {
 
     public void handleFacebookAccessToken(AccessToken accessToken) {
         mAuthRepo.handleFacebookAccessToken(accessToken);
+    }
+
+    public void addUser(FirebaseUser user){
+        mAuthRepo.addUser(user);
     }
 
 }

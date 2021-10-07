@@ -49,5 +49,10 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".ui.view.HungryContactActivity"
+            android:exported="true"/>
+
     </application>
 </manifest>

@@ -16,6 +16,10 @@
         "source": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\src\\main\\res\\layout\\nav_header_main.xml"
     },
     {
+        "merged": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_hungry_contact.xml",
+        "source": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\src\\main\\res\\layout\\activity_hungry_contact.xml"
+    },
+    {
         "merged": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\mates_fragment.xml",
         "source": "C:\\Users\\micka\\Desktop\\P7_DASILVA_MICKAEL\\P7_01_Go4Lunch\\app\\src\\main\\res\\layout\\mates_fragment.xml"
     },

@@ -21,6 +21,9 @@ public final class HungryFragmentBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final ConstraintLayout itemList;
+
+  @NonNull
   public final TextView itemListHungryAddress;
 
   @NonNull
@@ -39,10 +42,12 @@ public final class HungryFragmentBinding implements ViewBinding {
   public final TextView itemListHungryRange;
 
   private HungryFragmentBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView itemListHungryAddress, @NonNull ImageView itemListHungryAvatar,
-      @NonNull TextView itemListHungryMates, @NonNull TextView itemListHungryName,
-      @NonNull TextView itemListHungryOpening, @NonNull TextView itemListHungryRange) {
+      @NonNull ConstraintLayout itemList, @NonNull TextView itemListHungryAddress,
+      @NonNull ImageView itemListHungryAvatar, @NonNull TextView itemListHungryMates,
+      @NonNull TextView itemListHungryName, @NonNull TextView itemListHungryOpening,
+      @NonNull TextView itemListHungryRange) {
     this.rootView = rootView;
+    this.itemList = itemList;
     this.itemListHungryAddress = itemListHungryAddress;
     this.itemListHungryAvatar = itemListHungryAvatar;
     this.itemListHungryMates = itemListHungryMates;
@@ -78,6 +83,8 @@ public final class HungryFragmentBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      ConstraintLayout itemList = (ConstraintLayout) rootView;
+
       id = R.id.item_list_hungry_address;
       TextView itemListHungryAddress = ViewBindings.findChildViewById(rootView, id);
       if (itemListHungryAddress == null) {
@@ -114,7 +121,7 @@ public final class HungryFragmentBinding implements ViewBinding {
         break missingId;
       }
 
-      return new HungryFragmentBinding((ConstraintLayout) rootView, itemListHungryAddress,
+      return new HungryFragmentBinding((ConstraintLayout) rootView, itemList, itemListHungryAddress,
           itemListHungryAvatar, itemListHungryMates, itemListHungryName, itemListHungryOpening,
           itemListHungryRange);
     }

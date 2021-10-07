@@ -1,22 +1,14 @@
 package com.mdasilva.go4lunch.ui.view;
 
-import android.Manifest;
-import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.location.Location;
-import android.location.LocationManager;
-import android.net.Uri;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.view.View;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.facebook.CallbackManager;
@@ -27,17 +19,10 @@ import com.facebook.login.LoginResult;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
-import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.mdasilva.go4lunch.R;
 import com.mdasilva.go4lunch.databinding.ActivityLoginBinding;
 import com.mdasilva.go4lunch.ui.viewModel.LoginActivityViewModel;
 
-import permissions.dispatcher.NeedsPermission;
-import permissions.dispatcher.OnNeverAskAgain;
-import permissions.dispatcher.OnPermissionDenied;
-import permissions.dispatcher.OnShowRationale;
-import permissions.dispatcher.PermissionRequest;
-import permissions.dispatcher.RuntimePermissions;
 import timber.log.Timber;
 
 public class LoginActivity extends AppCompatActivity {
@@ -98,6 +83,7 @@ public class LoginActivity extends AppCompatActivity {
 
         viewModel.getUserMutableLiveData().observe(this, user -> {
             if(user != null) {
+                viewModel.addUser(user);
                 Intent intent = new Intent(this, HomeActivity.class);
                 finish();
                 startActivity(intent);

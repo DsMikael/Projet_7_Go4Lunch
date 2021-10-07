@@ -12,17 +12,22 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.mdasilva.go4lunch.databinding.MatesListFragmentBinding;
 import com.mdasilva.go4lunch.ui.viewModel.MatesListFragmentViewModel;
+import com.xwray.groupie.GroupieAdapter;
 
 public class MatesListFragment extends Fragment {
 
     private MatesListFragmentBinding binding;
+    private MatesListFragmentViewModel viewModel;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
 
         binding = MatesListFragmentBinding.inflate(inflater, container, false);
-        MatesListFragmentViewModel viewModel = new ViewModelProvider(requireActivity()).get(MatesListFragmentViewModel.class);
+        viewModel = new ViewModelProvider(requireActivity()).get(MatesListFragmentViewModel.class);
+
+        GroupieAdapter adapter = new GroupieAdapter();
+
         return binding.getRoot();
     }
 

@@ -9,16 +9,19 @@ import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.MutableLiveData;
 
 import com.google.firebase.auth.FirebaseUser;
+import com.mdasilva.go4lunch.data.model.restaurantDetails.RestaurantDetails;
 import com.mdasilva.go4lunch.data.repository.AuthRepository;
 import com.mdasilva.go4lunch.data.repository.GooglePlaceRepository;
 
-import timber.log.Timber;
+import java.util.List;
 
 public class HomeActivityViewModel extends AndroidViewModel {
 
     private final AuthRepository mAuthRepo;
     public final MutableLiveData<Location> mlocation = new MutableLiveData<>();
     public GooglePlaceRepository mGoogleRepos;
+    public MutableLiveData<List<RestaurantDetails>> restaurantDetailsList = new MutableLiveData<>();
+
 
     public HomeActivityViewModel(@NonNull Application application) {
         super(application);
@@ -36,7 +39,6 @@ public class HomeActivityViewModel extends AndroidViewModel {
 
     public void location(Location lastKnownLocation) {
         mlocation.postValue(lastKnownLocation);
-        Timber.d("Location %s", lastKnownLocation);
         getRestaurantDetails(lastKnownLocation);
     }
 
@@ -44,11 +46,13 @@ public class HomeActivityViewModel extends AndroidViewModel {
     public void getRestaurantDetails(Location location) {
         mGoogleRepos.getRestaurants(
                 location.getLatitude() + "," + location.getLongitude(),
-                2000,
+                500,
                 "restaurant",
-                "AIzaSyDvX-bwM5ZRMI8nRUx58ZDvqVQLzl7z9os",
-                restaurants -> Timber.d("Restaurant %s", restaurants));
-
+                restaurants -> {
+                    if(restaurants != null && restaurants.size() != 0){
+                        restaurantDetailsList.postValue(restaurants);
+                    }
+                });
     }
 }
 

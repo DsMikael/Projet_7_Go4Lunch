@@ -1,5 +1,6 @@
 package com.mdasilva.go4lunch.ui.view;
 
+import android.location.Location;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,7 +11,9 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.mdasilva.go4lunch.data.model.restaurantDetails.RestaurantDetails;
 import com.mdasilva.go4lunch.databinding.HungryListFragmentBinding;
+import com.mdasilva.go4lunch.ui.item.HungryItem;
 import com.mdasilva.go4lunch.ui.viewModel.HomeActivityViewModel;
 import com.xwray.groupie.GroupieAdapter;
 
@@ -20,7 +23,7 @@ import timber.log.Timber;
 public class HungryListFragment extends Fragment {
 
     private HungryListFragmentBinding binding;
-    private HomeActivityViewModel viewModel;
+    private Location mlocation;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
@@ -29,12 +32,19 @@ public class HungryListFragment extends Fragment {
         binding = HungryListFragmentBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        viewModel = new ViewModelProvider(requireActivity()).get(HomeActivityViewModel.class);
+        HomeActivityViewModel viewModel = new ViewModelProvider(requireActivity()).get(HomeActivityViewModel.class);
 
         GroupieAdapter adapter = new GroupieAdapter();
-        binding.listHungry.setAdapter(adapter);
 
-        Timber.d("FragmentHungry");
+        viewModel.mlocation.observe(getViewLifecycleOwner(), location -> mlocation = location);
+
+        viewModel.restaurantDetailsList.observe(getViewLifecycleOwner(), restaurantDetails -> {
+            for (RestaurantDetails restaurant : restaurantDetails) {
+                    adapter.add(new HungryItem(restaurant, mlocation, getContext()));
+            }
+            binding.listHungry.setAdapter(adapter);
+        });
+
         return root;
     }
 

@@ -1502,7 +1502,6 @@
     <item name="action_bar_spinner" type="id"/>
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
-    <item name="dataBinding" type="id"/>
     <item name="fragment_container_view_tag" type="id"/>
     <item name="ghost_view" type="id"/>
     <item name="ghost_view_holder" type="id"/>
@@ -1524,8 +1523,6 @@
     <item name="navigation_bar_item_labels_group" type="id"/>
     <item name="navigation_bar_item_large_label_view" type="id"/>
     <item name="navigation_bar_item_small_label_view" type="id"/>
-    <item name="onAttachStateChangeListener" type="id"/>
-    <item name="onDateChanged" type="id"/>
     <item name="parent_matrix" type="id"/>
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
@@ -1552,7 +1549,6 @@
     <item name="tag_window_insets_animation_callback" type="id"/>
     <item name="text" type="id"/>
     <item name="text2" type="id"/>
-    <item name="textWatcher" type="id"/>
     <item name="text_input_error_icon" type="id"/>
     <item name="textinput_counter" type="id"/>
     <item name="textinput_error" type="id"/>
@@ -1687,6 +1683,7 @@
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="copy_toast_msg">Link copied to clipboard</string>
     <string name="default_web_client_id" translatable="false">947526646363-ujb05movmakqen42abrmnvenjmt7e4oi.apps.googleusercontent.com</string>
     <string name="description_background">Background image</string>
     <string name="description_logo_go4lunch">logo Go4Lunch</string>
@@ -1695,6 +1692,9 @@
     <string name="fab_transformation_scrim_behavior" translatable="false">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
     <string name="fab_transformation_sheet_behavior" translatable="false">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
     <string name="facebook_app_id">365495391717273</string>
+    <string name="fallback_menu_item_copy_link">Copy link</string>
+    <string name="fallback_menu_item_open_in_browser">Open in browser</string>
+    <string name="fallback_menu_item_share_link">Share link</string>
     <string name="fb_login_protocol_scheme">fb365495391717273</string>
     <string name="gcm_defaultSenderId" translatable="false">947526646363</string>
     <string name="google_api_key" translatable="false">AIzaSyAnOeUGVHL-SpzvoGFfNGyZCTCM_BUngCw</string>
@@ -1704,6 +1704,8 @@
     <string name="google_storage_bucket" translatable="false">go4lunch-op.appspot.com</string>
     <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
     <string description="Content description for an icon that appears in the title area of a dialog" name="icon_content_description">Dialog Icon</string>
+    <string name="itemListHungryMates">(%1$s)</string>
+    <string name="itemListHungryRange">%1$s m</string>
     <string name="item_view_role_description">Tab</string>
     <string name="material_clock_display_divider" translatable="false">:</string>
     <string description="Description for the toggle to choose between AM and PM [CHAR_LIMIT=NONE] " name="material_clock_toggle_content_description">Select AM or PM</string>
@@ -7600,7 +7602,7 @@
     </declare-styleable>
     <declare-styleable name="ConstraintSet">
         <attr format="reference" name="deriveConstraintsFrom"/>
-        <attr format="enum" name="ConstraintRotate">
+        <attr format="enum" name="constraintRotate">
             <enum name="none" value="0"/>
             <enum name="right" value="1"/>
             <enum name="left" value="2"/>

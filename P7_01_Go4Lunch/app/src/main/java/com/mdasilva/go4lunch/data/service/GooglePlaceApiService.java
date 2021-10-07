@@ -12,12 +12,9 @@ public interface GooglePlaceApiService {
     @GET("nearbysearch/json")
     Call<RestaurantPlaceIdListWrapper> getRestaurants(@Query("location") String location,
                                                       @Query("radius") int radius,
-                                                      @Query("type") String type,
-                                                      @Query("key") String key);
-
+                                                      @Query("type") String type);
 
     @GET("details/json")
-    Call<RestaurantDetailsWrapper> getRestaurantsDetails(@Query("place_id") String placeId,
-                                                         @Query("key") String key);
+    Call<RestaurantDetailsWrapper> getRestaurantsDetails(@Query("place_id") String placeId);
 
 }

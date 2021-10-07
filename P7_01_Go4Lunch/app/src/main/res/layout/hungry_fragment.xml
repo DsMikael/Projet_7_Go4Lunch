@@ -1,63 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:padding="10dp">
-
-    <TextView
-        android:id="@+id/item_list_hungry_name"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Le Zinc" />
+        android:padding="10dp"
+        android:id="@+id/item_list">
+
+        <TextView
+            android:id="@+id/item_list_hungry_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/item_list_hungry_mates"
+            tools:text="Le Zinc" />
 
     <TextView
         android:id="@+id/item_list_hungry_address"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintEnd_toStartOf="@+id/item_list_hungry_mates"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/item_list_hungry_name"
-        tools:text="French - 12 rue du Faubourg Possonnière"/>
+        tools:text="French - 12 rue du Faubourg Possonnière 12 rue du Faubourg Possonnière" />
+
     <TextView
         android:id="@+id/item_list_hungry_opening"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/item_list_hungry_avatar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/item_list_hungry_address"
-        tools:text="Open until 7pm"/>
+        tools:text="Open until 7pm" />
 
-    <TextView
-        android:id="@+id/item_list_hungry_range"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toStartOf="@+id/item_list_hungry_avatar"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginEnd="5dp"
-        tools:text="120m" />
+        <TextView
+            android:id="@+id/item_list_hungry_range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/item_list_hungry_avatar"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="5dp"
+            tools:text="120m" />
 
-    <TextView
-        android:id="@+id/item_list_hungry_mates"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toStartOf="@+id/item_list_hungry_avatar"
-        app:layout_constraintTop_toBottomOf="@+id/item_list_hungry_range"
-        android:layout_marginEnd="5dp"
-        tools:text="(2)"
-        app:drawableLeftCompat="@drawable/ic_mates_choice"
-        android:gravity="center" />
+        <TextView
+            android:id="@+id/item_list_hungry_mates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/item_list_hungry_avatar"
+            app:layout_constraintTop_toBottomOf="@+id/item_list_hungry_range"
+            android:layout_marginEnd="5dp"
+            tools:text="(2)"
+            app:drawableLeftCompat="@drawable/ic_mates_choice"
+            android:gravity="center" />
 
-    <ImageView
-        android:id="@+id/item_list_hungry_avatar"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:id="@+id/item_list_hungry_avatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+    </androidx.constraintlayout.widget.ConstraintLayout>

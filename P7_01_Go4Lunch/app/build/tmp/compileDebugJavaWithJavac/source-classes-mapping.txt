@@ -8,8 +8,6 @@ com/mdasilva/go4lunch/databinding/ActivityHomeBinding.java
  com.mdasilva.go4lunch.databinding.ActivityHomeBinding
 com/mdasilva/go4lunch/databinding/NavHeaderMainBinding.java
  com.mdasilva.go4lunch.databinding.NavHeaderMainBinding
-com/mdasilva/go4lunch/DataBindingTriggerClass.java
- com.mdasilva.go4lunch.DataBindingTriggerClass
 com/mdasilva/go4lunch/data/model/restaurantDetails/RestaurantPlaceIdListWrapper.java
  com.mdasilva.go4lunch.data.model.restaurantDetails.RestaurantPlaceIdListWrapper
 com/mdasilva/go4lunch/ui/view/LoginActivity.java
@@ -21,38 +19,59 @@ com/mdasilva/go4lunch/databinding/MatesFragmentBinding.java
  com.mdasilva.go4lunch.databinding.MatesFragmentBinding
 com/mdasilva/go4lunch/Go4LunchApp.java
  com.mdasilva.go4lunch.Go4LunchApp
-com/mdasilva/go4lunch/data/model/restaurantDetails/RestaurantPlaceIdList.java
- com.mdasilva.go4lunch.data.model.restaurantDetails.RestaurantPlaceIdList
-com/mdasilva/go4lunch/ui/view/MatesListFragment.java
- com.mdasilva.go4lunch.ui.view.MatesListFragment
-com/mdasilva/go4lunch/databinding/HungryFragmentBinding.java
- com.mdasilva.go4lunch.databinding.HungryFragmentBinding
-com/mdasilva/go4lunch/data/model/restaurantDetails/RestaurantDetailsWrapper.java
- com.mdasilva.go4lunch.data.model.restaurantDetails.RestaurantDetailsWrapper
-com/mdasilva/go4lunch/data/repository/AuthRepository.java
- com.mdasilva.go4lunch.data.repository.AuthRepository
-com/mdasilva/go4lunch/ui/viewModel/LoginActivityViewModel.java
- com.mdasilva.go4lunch.ui.viewModel.LoginActivityViewModel
-com/mdasilva/go4lunch/BuildConfig.java
- com.mdasilva.go4lunch.BuildConfig
-com/mdasilva/go4lunch/databinding/HungryListFragmentBinding.java
- com.mdasilva.go4lunch.databinding.HungryListFragmentBinding
-com/mdasilva/go4lunch/data/model/User.java
- com.mdasilva.go4lunch.data.model.User
-com/mdasilva/go4lunch/data/model/restaurantDetails/RestaurantDetails.java
- com.mdasilva.go4lunch.data.model.restaurantDetails.RestaurantDetails
-com/mdasilva/go4lunch/data/service/GooglePlaceApiService.java
- com.mdasilva.go4lunch.data.service.GooglePlaceApiService
-com/mdasilva/go4lunch/ui/view/HomeActivity.java
- com.mdasilva.go4lunch.ui.view.HomeActivity
 com/mdasilva/go4lunch/ui/view/HungryListFragment.java
  com.mdasilva.go4lunch.ui.view.HungryListFragment
-com/mdasilva/go4lunch/ui/view/MapsFragment.java
- com.mdasilva.go4lunch.ui.view.MapsFragment
+com/mdasilva/go4lunch/ui/view/HungryContactActivity.java
+ com.mdasilva.go4lunch.ui.view.HungryContactActivity
+com/mdasilva/go4lunch/ui/item/HungryItem.java
+ com.mdasilva.go4lunch.ui.item.HungryItem
+com/mdasilva/go4lunch/ui/view/HomeActivity.java
+ com.mdasilva.go4lunch.ui.view.HomeActivity
+com/mdasilva/go4lunch/databinding/HungryFragmentBinding.java
+ com.mdasilva.go4lunch.databinding.HungryFragmentBinding
+com/mdasilva/go4lunch/BuildConfig.java
+ com.mdasilva.go4lunch.BuildConfig
+com/mdasilva/go4lunch/data/model/restaurantDetails/RestaurantDetailsWrapper.java
+ com.mdasilva.go4lunch.data.model.restaurantDetails.RestaurantDetailsWrapper
+com/mdasilva/go4lunch/ui/view/MatesListFragment.java
+ com.mdasilva.go4lunch.ui.view.MatesListFragment
 com/mdasilva/go4lunch/data/repository/GooglePlaceRepository.java
  com.mdasilva.go4lunch.data.repository.GooglePlaceRepository
  com.mdasilva.go4lunch.data.repository.GooglePlaceRepository$1
- com.mdasilva.go4lunch.data.repository.GooglePlaceRepository$1$1
+ com.mdasilva.go4lunch.data.repository.GooglePlaceRepository$2
+ com.mdasilva.go4lunch.data.repository.GooglePlaceRepository$3
+ com.mdasilva.go4lunch.data.repository.GooglePlaceRepository$ResultDetailListener
  com.mdasilva.go4lunch.data.repository.GooglePlaceRepository$ResultListener
+com/mdasilva/go4lunch/data/model/restaurantDetails/RestaurantDetailsPhoto.java
+ com.mdasilva.go4lunch.data.model.restaurantDetails.RestaurantDetailsPhoto
+com/mdasilva/go4lunch/databinding/HungryListFragmentBinding.java
+ com.mdasilva.go4lunch.databinding.HungryListFragmentBinding
+com/mdasilva/go4lunch/data/model/restaurantDetails/RestaurantPlaceIdList.java
+ com.mdasilva.go4lunch.data.model.restaurantDetails.RestaurantPlaceIdList
+com/mdasilva/go4lunch/ui/viewModel/HungryContactViewModel.java
+ com.mdasilva.go4lunch.ui.viewModel.HungryContactViewModel
+com/mdasilva/go4lunch/data/model/restaurantDetails/RestaurantDetails.java
+ com.mdasilva.go4lunch.data.model.restaurantDetails.RestaurantDetails
+ com.mdasilva.go4lunch.data.model.restaurantDetails.RestaurantDetails$Geometry
+ com.mdasilva.go4lunch.data.model.restaurantDetails.RestaurantDetails$Geometry$Location
+ com.mdasilva.go4lunch.data.model.restaurantDetails.RestaurantDetails$OpeningHours
+ com.mdasilva.go4lunch.data.model.restaurantDetails.RestaurantDetails$OpeningHours$Period
+ com.mdasilva.go4lunch.data.model.restaurantDetails.RestaurantDetails$OpeningHours$Period$Close
+ com.mdasilva.go4lunch.data.model.restaurantDetails.RestaurantDetails$OpeningHours$Period$Open
+ com.mdasilva.go4lunch.data.model.restaurantDetails.RestaurantDetails$Photos
+com/mdasilva/go4lunch/data/service/GooglePlaceApiService.java
+ com.mdasilva.go4lunch.data.service.GooglePlaceApiService
+com/mdasilva/go4lunch/databinding/ActivityHungryContactBinding.java
+ com.mdasilva.go4lunch.databinding.ActivityHungryContactBinding
+com/mdasilva/go4lunch/ui/view/MapsFragment.java
+ com.mdasilva.go4lunch.ui.view.MapsFragment
+com/mdasilva/go4lunch/data/model/User.java
+ com.mdasilva.go4lunch.data.model.User
 com/mdasilva/go4lunch/ui/viewModel/HomeActivityViewModel.java
  com.mdasilva.go4lunch.ui.viewModel.HomeActivityViewModel
+com/mdasilva/go4lunch/data/repository/AuthRepository.java
+ com.mdasilva.go4lunch.data.repository.AuthRepository
+ com.mdasilva.go4lunch.data.repository.AuthRepository$1
+ com.mdasilva.go4lunch.data.repository.AuthRepository$2
+com/mdasilva/go4lunch/ui/viewModel/LoginActivityViewModel.java
+ com.mdasilva.go4lunch.ui.viewModel.LoginActivityViewModel
